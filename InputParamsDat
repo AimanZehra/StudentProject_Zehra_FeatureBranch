@@ -1,0 +1,94 @@
+# ==============================================================================
+#  Parameter template file for PMC Code
+#  Version 1.0
+#
+#  FORMAT:
+# 
+#  <KEY WORD> <NUMBER>
+# 
+#  Every line, except if it starts with a key words is ignored!
+#  The order of key words in principle is arbitrary., however, the
+#  provided order is recommended to keep the input file user freindly.
+# 
+#  Each key word has to be IN CAPITAL LETTERS, followed by a number 
+#  (either integer or double) 
+#  Key words can be left out (but shouldn't). Then default values will apply.
+# 
+#  NOTE: If Keywords are to be added to or removed from this file, 
+#        the file Initialization.c which implements the function to read 
+#        the file has to be altered appropriately.
+#        It is important that no KEY WORD may appear twice or may be a subset
+#        of another KEY WORD (e.g. 'MD' in 'MDSIM'). For this case, the string 
+#        comparison is not robust which will cause failure. I could fix this but
+#        I dont feel like going through that trouble so I leave it and know what
+#        I am doing.
+# ==============================================================================
+
+#===============================================
+PMC-Code
+Copyright Prof. Dr. habil. Martin O. Steinhauser
+#===============================================
+
+
+
+#=========================================
+KEY                        GENERAL_SECTION
+KEY BASICS
+#----------------------------------------
+NUM_PARTICLES_TOTAL		1001
+TIME_DELTA              	0.04685
+TIME_END			468.5
+
+
+#=========================================
+KEY                       PARTICLE_SECTION
+KEY PARTICLE INFORMATION
+#-----------------------------------------
+0_MASS				1.0										
+0_POSX				0.
+0_POSY				0.
+0_POSZ				0.
+0_VELOX				0.
+0_VELOY				0.
+0_VELOZ				0.
+
+1_MASS				0.000003
+1_POSX				0.
+1_POSY				1.
+1_POSZ				0.
+1_VELOX				-1.0
+1_VELOY				0.
+1_VELOZ				0.
+
+2_MASS				0.00055
+2_POSX				0.
+2_POSY				5.36
+2_POSZ				0.
+2_VELOX				-0.435
+2_VELOY				0.
+2_VELOZ				0.
+
+3_MASS				0.00000000000001
+3_POSX				34.75
+3_POSY				0.
+3_POSZ				0.
+3_VELOX				0.
+3_VELOY				0.0296
+3_VELOZ				0.
+
+4_MASS				0.00005				
+4_POSX				25.
+4_POSY				0.
+4_POSZ				0.
+4_VELOX				0.
+4_VELOY				0.02
+4_VELOZ				0.02
+
+5_MASS				0.1
+5_POSX				0.
+5_POSY				17.
+5_POSZ				0.
+5_VELOX				-0.25
+5_VELOY				0.
+5_VELOZ				0.
+# END OF PARAMETER INPUT FILE
