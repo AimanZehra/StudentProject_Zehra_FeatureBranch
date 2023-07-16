@@ -60,7 +60,7 @@ void outputResults(Particle *p, int N, double time){
     {
     	for( i = 0; i < 1001; ++i)
     	{
-    		fprintf(WriteOutput, "%lf, %lf, %lf\n", p[i].x[0], p[i].x[1], p[i].x[2]);	
+    		fprintf(WriteOutput, "<%lf %lf %lf>,\n", p[i].x[0], p[i].x[1], p[i].x[2]);	
     	}
        
     }
