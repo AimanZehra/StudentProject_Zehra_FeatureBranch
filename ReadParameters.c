@@ -39,7 +39,8 @@ void readParameters(char *nameOfParamFile, S_Parameter *parameters){
   /*======================================================*/
   char keywords[][100]={
     /* GENERAL VARIABLES */
-    "NUM_PARTICLES_TOTAL","TIME_DELTA","TIME_END",   /* 0-2 */
+    "NUM_PARTICLES_TOTAL","TIME_DELTA","TIME_END",   
+    "PARTICLE_RADIUS"                                /* 0-2 */
     /* PARTICLE 0 */                                 /* 3-9 */
     "0_MASS",
     "0_POSX","0_POSY","0_POSZ",
@@ -191,62 +192,63 @@ void readParameters(char *nameOfParamFile, S_Parameter *parameters){
   parameters-> N                      = iParameters[0];
   parameters-> timeDelta              = dParameters[1];
   parameters-> timeEnd                = dParameters[2];
+  parameters-> radius                 = dParameters[3];
 
   /* Now assign all Body Parameters */
   /* BODY 0 */
-  parameters-> mass0                  = dParameters[3];
-  parameters-> position0_X            = dParameters[4];
-  parameters-> position0_Y            = dParameters[5];
-  parameters-> position0_Z            = dParameters[6];
-  parameters-> velocity0_X            = dParameters[7];
-  parameters-> velocity0_Y            = dParameters[8];
-  parameters-> velocity0_Z            = dParameters[9];
+  parameters-> mass0                  = dParameters[4];
+  parameters-> position0_X            = dParameters[5];
+  parameters-> position0_Y            = dParameters[6];
+  parameters-> position0_Z            = dParameters[7];
+  parameters-> velocity0_X            = dParameters[8];
+  parameters-> velocity0_Y            = dParameters[9];
+  parameters-> velocity0_Z            = dParameters[10];
 
   /* BODY 1 */
-  parameters-> mass1                  = dParameters[10];
-  parameters-> position1_X            = dParameters[11];
-  parameters-> position1_Y            = dParameters[12];
-  parameters-> position1_Z            = dParameters[13];
-  parameters-> velocity1_X            = dParameters[14];
-  parameters-> velocity1_Y            = dParameters[15];
-  parameters-> velocity1_Z            = dParameters[16];
+  parameters-> mass1                  = dParameters[11];
+  parameters-> position1_X            = dParameters[12];
+  parameters-> position1_Y            = dParameters[13];
+  parameters-> position1_Z            = dParameters[14];
+  parameters-> velocity1_X            = dParameters[15];
+  parameters-> velocity1_Y            = dParameters[16];
+  parameters-> velocity1_Z            = dParameters[17];
 
   /* BODY 2 */
-  parameters-> mass2                  = dParameters[17];
-  parameters-> position2_X            = dParameters[18];
-  parameters-> position2_Y            = dParameters[19];
-  parameters-> position2_Z            = dParameters[20];
-  parameters-> velocity2_X            = dParameters[21];
-  parameters-> velocity2_Y            = dParameters[22];
-  parameters-> velocity2_Z            = dParameters[23];
+  parameters-> mass2                  = dParameters[18];
+  parameters-> position2_X            = dParameters[19];
+  parameters-> position2_Y            = dParameters[20];
+  parameters-> position2_Z            = dParameters[21];
+  parameters-> velocity2_X            = dParameters[22];
+  parameters-> velocity2_Y            = dParameters[23];
+  parameters-> velocity2_Z            = dParameters[24];
 
   /* BODY 3 */
-  parameters-> mass3                  = dParameters[24];
-  parameters-> position3_X            = dParameters[25];
-  parameters-> position3_Y            = dParameters[26];
-  parameters-> position3_Z            = dParameters[27];
-  parameters-> velocity3_X            = dParameters[28];
-  parameters-> velocity3_Y            = dParameters[29];
-  parameters-> velocity3_Z            = dParameters[30];
+  parameters-> mass3                  = dParameters[25];
+  parameters-> position3_X            = dParameters[26];
+  parameters-> position3_Y            = dParameters[27];
+  parameters-> position3_Z            = dParameters[28];
+  parameters-> velocity3_X            = dParameters[29];
+  parameters-> velocity3_Y            = dParameters[30];
+  parameters-> velocity3_Z            = dParameters[31];
  
   /* BODY 4 */
-  parameters-> mass4                  = dParameters[31];
-  parameters-> position4_X            = dParameters[32];
-  parameters-> position4_Y            = dParameters[33];
-  parameters-> position4_Z            = dParameters[34];
-  parameters-> velocity4_X            = dParameters[35];
-  parameters-> velocity4_Y            = dParameters[36];
-  parameters-> velocity4_Z            = dParameters[37];
+  parameters-> mass4                  = dParameters[32];
+  parameters-> position4_X            = dParameters[33];
+  parameters-> position4_Y            = dParameters[34];
+  parameters-> position4_Z            = dParameters[35];
+  parameters-> velocity4_X            = dParameters[36];
+  parameters-> velocity4_Y            = dParameters[37];
+  parameters-> velocity4_Z            = dParameters[38];
 
 
   /* BODY 5 */
-  parameters-> mass5                  = dParameters[38];
-  parameters-> position5_X            = dParameters[39];
-  parameters-> position5_Y            = dParameters[40];
-  parameters-> position5_Z            = dParameters[41];
-  parameters-> velocity5_X            = dParameters[42];
-  parameters-> velocity5_Y            = dParameters[43];
-  parameters-> velocity5_Z            = dParameters[44];
+  parameters-> mass5                  = dParameters[39];
+  parameters-> position5_X            = dParameters[40];
+  parameters-> position5_Y            = dParameters[41];
+  parameters-> position5_Z            = dParameters[42];
+  parameters-> velocity5_X            = dParameters[43];
+  parameters-> velocity5_Y            = dParameters[44];
+  parameters-> velocity5_Z            = dParameters[45];
 
   /* REMARK: THIS WOULD BE THE PLACE WHERE YOU CHECKED
      ALL VARIABLES FOR CONSISITENCY!
