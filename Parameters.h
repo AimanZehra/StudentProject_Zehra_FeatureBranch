@@ -74,6 +74,7 @@ struct Parameter
   int N;
   double timeDelta;
   double timeEnd;
+  double radius;
 
   /* Particles' Parameters */
   /** \note In principle, the number of parameters could be
