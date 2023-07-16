@@ -38,7 +38,7 @@ KEY BASICS
 NUM_PARTICLES_TOTAL		1001
 TIME_DELTA              	0.04685
 TIME_END			468.5
-
+PARTICLE_RADIUS          0.7
 
 #=========================================
 KEY                       PARTICLE_SECTION

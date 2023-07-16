@@ -17,6 +17,7 @@
 #include "Statistics.h"
 #include "Particles.h"
 #include "WriteSystem.h"
+#include "Parameters.h"
 
 
 void updateX(Particle *p, double deltaTime){
